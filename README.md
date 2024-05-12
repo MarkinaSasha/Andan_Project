@@ -1,6 +1,96 @@
 ## Проект по Анализу данных 
 ## Тема "Анализ популярности игр на основе данных обзоров портала IGN"  (предварительная)
 
+<u>**Шаг 0. Не поняла, как открыть ссылку прям с гитхаба**</u>
+
+Когда датасет хранится на моем компе - всё работает. Когда я запушила всё на гитхаб - подставлять ссылку с гитхаба оказалось ошибкой. 
+Но я не поняла, а как тогда обратиться к файлу на гитхабе...
+```
+Skipping line 41: ',' expected after '"'
+Skipping line 1490: ',' expected after '"'
+Skipping line 524: Expected 1 fields in line 524, saw 4
+Skipping line 536: Expected 1 fields in line 536, saw 2
+Skipping line 585: Expected 1 fields in line 585, saw 3
+Skipping line 593: Expected 1 fields in line 593, saw 6
+Skipping line 594: Expected 1 fields in line 594, saw 3
+Skipping line 622: Expected 1 fields in line 622, saw 4
+Skipping line 632: Expected 1 fields in line 632, saw 4
+Skipping line 642: Expected 1 fields in line 642, saw 4
+Skipping line 652: Expected 1 fields in line 652, saw 4
+Skipping line 662: Expected 1 fields in line 662, saw 4
+Skipping line 672: Expected 1 fields in line 672, saw 4
+Skipping line 682: Expected 1 fields in line 682, saw 4
+Skipping line 692: Expected 1 fields in line 692, saw 4
+Skipping line 707: Expected 1 fields in line 707, saw 4
+Skipping line 711: Expected 1 fields in line 711, saw 4
+Skipping line 718: Expected 1 fields in line 718, saw 4
+Skipping line 725: Expected 1 fields in line 725, saw 4
+Skipping line 747: Expected 1 fields in line 747, saw 4
+Skipping line 751: Expected 1 fields in line 751, saw 4
+Skipping line 755: Expected 1 fields in line 755, saw 4
+Skipping line 759: Expected 1 fields in line 759, saw 4
+Skipping line 771: Expected 1 fields in line 771, saw 4
+Skipping line 775: Expected 1 fields in line 775, saw 4
+Skipping line 779: Expected 1 fields in line 779, saw 4
+Skipping line 791: Expected 1 fields in line 791, saw 4
+Skipping line 798: Expected 1 fields in line 798, saw 8
+Skipping line 799: Expected 1 fields in line 799, saw 3
+Skipping line 805: Expected 1 fields in line 805, saw 4
+Skipping line 809: Expected 1 fields in line 809, saw 4
+Skipping line 830: Expected 1 fields in line 830, saw 4
+Skipping line 841: Expected 1 fields in line 841, saw 4
+Skipping line 853: Expected 1 fields in line 853, saw 4
+Skipping line 857: Expected 1 fields in line 857, saw 4
+Skipping line 861: Expected 1 fields in line 861, saw 4
+Skipping line 869: Expected 1 fields in line 869, saw 3
+Skipping line 884: Expected 1 fields in line 884, saw 2
+Skipping line 901: Expected 1 fields in line 901, saw 5
+Skipping line 1168: Expected 1 fields in line 1168, saw 2
+Skipping line 1234: Expected 1 fields in line 1234, saw 2
+Skipping line 1254: Expected 1 fields in line 1254, saw 6
+Skipping line 1255: Expected 1 fields in line 1255, saw 3
+Skipping line 1261: Expected 1 fields in line 1261, saw 6
+Skipping line 1262: Expected 1 fields in line 1262, saw 3
+Skipping line 1310: Expected 1 fields in line 1310, saw 2
+Skipping line 1331: Expected 1 fields in line 1331, saw 6
+Skipping line 1337: Expected 1 fields in line 1337, saw 6
+Skipping line 1345: Expected 1 fields in line 1345, saw 6
+Skipping line 1365: Expected 1 fields in line 1365, saw 4
+Skipping line 1373: Expected 1 fields in line 1373, saw 4
+Skipping line 1381: Expected 1 fields in line 1381, saw 4
+Skipping line 1389: Expected 1 fields in line 1389, saw 4
+Skipping line 1397: Expected 1 fields in line 1397, saw 4
+Skipping line 1405: Expected 1 fields in line 1405, saw 4
+Skipping line 1413: Expected 1 fields in line 1413, saw 4
+Skipping line 1544: Expected 1 fields in line 1544, saw 2
+Skipping line 1551: Expected 1 fields in line 1551, saw 3
+Skipping line 1554: Expected 1 fields in line 1554, saw 3
+Skipping line 1557: Expected 1 fields in line 1557, saw 3
+Skipping line 1560: Expected 1 fields in line 1560, saw 3
+Skipping line 1563: Expected 1 fields in line 1563, saw 3
+Skipping line 1566: Expected 1 fields in line 1566, saw 3
+Traceback (most recent call last):
+  File "D:\Anaconda\lib\site-packages\pandas\core\indexes\base.py", line 3629, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'score'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Саша\Python_Basic\Andan_project\Step4.py", line 52, in <module>
+    ser = pd.Series(df['score'])
+  File "D:\Anaconda\lib\site-packages\pandas\core\frame.py", line 3505, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "D:\Anaconda\lib\site-packages\pandas\core\indexes\base.py", line 3631, in get_loc
+    raise KeyError(key) from err
+KeyError: 'score'
+```
+
+
 <u>**Шаг 1. Выбор темы**</u>
 
     Почему решила делать одна:
