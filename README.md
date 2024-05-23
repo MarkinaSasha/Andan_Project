@@ -1,96 +1,6 @@
 ## Проект по Анализу данных 
 ## Тема "Анализ популярности игр на основе данных обзоров портала IGN"  (предварительная)
 
-<u>**Шаг 0. Не поняла, как открыть ссылку прям с гитхаба**</u>
-
-Когда датасет хранится на моем компе - всё работает. Когда я запушила всё на гитхаб - подставлять ссылку с гитхаба оказалось ошибкой. 
-Но я не поняла, а как тогда обратиться к файлу на гитхабе...
-```
-Skipping line 41: ',' expected after '"'
-Skipping line 1490: ',' expected after '"'
-Skipping line 524: Expected 1 fields in line 524, saw 4
-Skipping line 536: Expected 1 fields in line 536, saw 2
-Skipping line 585: Expected 1 fields in line 585, saw 3
-Skipping line 593: Expected 1 fields in line 593, saw 6
-Skipping line 594: Expected 1 fields in line 594, saw 3
-Skipping line 622: Expected 1 fields in line 622, saw 4
-Skipping line 632: Expected 1 fields in line 632, saw 4
-Skipping line 642: Expected 1 fields in line 642, saw 4
-Skipping line 652: Expected 1 fields in line 652, saw 4
-Skipping line 662: Expected 1 fields in line 662, saw 4
-Skipping line 672: Expected 1 fields in line 672, saw 4
-Skipping line 682: Expected 1 fields in line 682, saw 4
-Skipping line 692: Expected 1 fields in line 692, saw 4
-Skipping line 707: Expected 1 fields in line 707, saw 4
-Skipping line 711: Expected 1 fields in line 711, saw 4
-Skipping line 718: Expected 1 fields in line 718, saw 4
-Skipping line 725: Expected 1 fields in line 725, saw 4
-Skipping line 747: Expected 1 fields in line 747, saw 4
-Skipping line 751: Expected 1 fields in line 751, saw 4
-Skipping line 755: Expected 1 fields in line 755, saw 4
-Skipping line 759: Expected 1 fields in line 759, saw 4
-Skipping line 771: Expected 1 fields in line 771, saw 4
-Skipping line 775: Expected 1 fields in line 775, saw 4
-Skipping line 779: Expected 1 fields in line 779, saw 4
-Skipping line 791: Expected 1 fields in line 791, saw 4
-Skipping line 798: Expected 1 fields in line 798, saw 8
-Skipping line 799: Expected 1 fields in line 799, saw 3
-Skipping line 805: Expected 1 fields in line 805, saw 4
-Skipping line 809: Expected 1 fields in line 809, saw 4
-Skipping line 830: Expected 1 fields in line 830, saw 4
-Skipping line 841: Expected 1 fields in line 841, saw 4
-Skipping line 853: Expected 1 fields in line 853, saw 4
-Skipping line 857: Expected 1 fields in line 857, saw 4
-Skipping line 861: Expected 1 fields in line 861, saw 4
-Skipping line 869: Expected 1 fields in line 869, saw 3
-Skipping line 884: Expected 1 fields in line 884, saw 2
-Skipping line 901: Expected 1 fields in line 901, saw 5
-Skipping line 1168: Expected 1 fields in line 1168, saw 2
-Skipping line 1234: Expected 1 fields in line 1234, saw 2
-Skipping line 1254: Expected 1 fields in line 1254, saw 6
-Skipping line 1255: Expected 1 fields in line 1255, saw 3
-Skipping line 1261: Expected 1 fields in line 1261, saw 6
-Skipping line 1262: Expected 1 fields in line 1262, saw 3
-Skipping line 1310: Expected 1 fields in line 1310, saw 2
-Skipping line 1331: Expected 1 fields in line 1331, saw 6
-Skipping line 1337: Expected 1 fields in line 1337, saw 6
-Skipping line 1345: Expected 1 fields in line 1345, saw 6
-Skipping line 1365: Expected 1 fields in line 1365, saw 4
-Skipping line 1373: Expected 1 fields in line 1373, saw 4
-Skipping line 1381: Expected 1 fields in line 1381, saw 4
-Skipping line 1389: Expected 1 fields in line 1389, saw 4
-Skipping line 1397: Expected 1 fields in line 1397, saw 4
-Skipping line 1405: Expected 1 fields in line 1405, saw 4
-Skipping line 1413: Expected 1 fields in line 1413, saw 4
-Skipping line 1544: Expected 1 fields in line 1544, saw 2
-Skipping line 1551: Expected 1 fields in line 1551, saw 3
-Skipping line 1554: Expected 1 fields in line 1554, saw 3
-Skipping line 1557: Expected 1 fields in line 1557, saw 3
-Skipping line 1560: Expected 1 fields in line 1560, saw 3
-Skipping line 1563: Expected 1 fields in line 1563, saw 3
-Skipping line 1566: Expected 1 fields in line 1566, saw 3
-Traceback (most recent call last):
-  File "D:\Anaconda\lib\site-packages\pandas\core\indexes\base.py", line 3629, in get_loc
-    return self._engine.get_loc(casted_key)
-  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
-  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
-  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
-  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
-KeyError: 'score'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "C:\Users\Саша\Python_Basic\Andan_project\Step4.py", line 52, in <module>
-    ser = pd.Series(df['score'])
-  File "D:\Anaconda\lib\site-packages\pandas\core\frame.py", line 3505, in __getitem__
-    indexer = self.columns.get_loc(key)
-  File "D:\Anaconda\lib\site-packages\pandas\core\indexes\base.py", line 3631, in get_loc
-    raise KeyError(key) from err
-KeyError: 'score'
-```
-
-
 <u>**Шаг 1. Выбор темы**</u>
 
     Почему решила делать одна:
@@ -173,14 +83,21 @@ month_data = np.append(month_data, "---")
 
 <u>**Шаг 4. Визуализация**</u>
 
-* см. Файл Step4
+* см. Файл Step4.py
+* см. Файл no_multigenre.py
 
 Я рассмотрела попарно все признаки и после этого решила, что мне нужны дополнительные признаки.
-Во-первых, надо будет еще раз доработать сам датасет, подкорректироват жанры и убрать мультижанровость.
-Во-вторых, мне кажется мне нужны для исследования дополнительные признаки (см. далее в шаге 5)
+
+- Я убрала мультижанровость, стало лучше, теперь мои графики выглядят не совсем как каша. Но... вам может показаться, что 
+некоторые жанры игр нелепые, типа Number of players. Мне тоже так кажется, но я посмотрела, и такой реально есть,
+вот тут игры этого жанра: https://www.ign.com/games/feature/number-of-players. 
+Поэтому, если какой-то жанр кажется не уместным, или не жанром вообще, то все вопросы не ко мне, а к IGN, которые 
+выделили такие жанры...
+
+- Мне кажется мне нужны для исследования дополнительные признаки (см. далее в шаге 5)
 
 Из визуализаций получилось узнать, какой жанр самый популярный, в какой месяц выставлялись самые высокие оценки, 
-зависимость оценки от жанра и платформы (опять же, когда уберу мультижанровость, думаю, будут более явные результаты).
+зависимость оценки от жанра и платформы. Я убрала мультижанровость, посмотрим, какие это дало результаты. 
 
 Гипотезы, которые хочу проверить будут в шаге 6.
 
@@ -188,21 +105,34 @@ month_data = np.append(month_data, "---")
 
 * см. файл Step5
 * файл total_data_set - куда я в финале загружу новые признаки
-* файл total_data_try - куда я в делаю пробные загрузки, чтобы не заруинить свой основной датасет и сэкономить время.
+* файл total_data_try - куда я в делаю пробные загрузки, чтобы не заруинить свой основной датасет и сэкономить время. (Наверное потом удалю, тк по факту это мусор)
 
 <u>Какие хочу добавить  признаки?</u>
 
+<span style="color: green">**Подробно про все признаки в файле Step5 по ходу решения**</span>
+
 * Я добавила рейтинг жанра игры - "Game_genre_rate". Я вычислила отношение оценки игры к средней оценке для ее жанра.
 Таким образом я хотела понять, насколько хорошо игра оценивается по сравнению с другими играми того же жанра.
-  * Пока я добавила только его. Получилось как я задумывала: коэффициент меньше 1 - значит игра хуже среднего, больше 1 - лучше среднего. Но мне кажется получалось не особо красиво. Я не знаю. как сделать красивее:(
-* Я хочу добавить относительную популярность жанра на платформе. Я вычислю долю игр каждого жанра на каждой платформе.
-Это даст вам представление о том, какие жанры наиболее популярны на разных платформах и как эти предпочтения различаются.
+  * Rоэффициент меньше 1 - значит игра хуже среднего, больше 1 - лучше среднего. Но мне кажется получалось не особо красиво. Я не знаю. как сделать красивее:(
+
+* Я добавила относительную популярность жанра на платформе. Я вычислила долю игр каждого жанра на каждой платформе.
+Это даст представление о том, какие жанры наиболее популярны на разных платформах и как эти предпочтения различаются.
+Что значат циферки в этом признаке? Если, например, значение этого столбца 0.25, значит игры 
+этого жанра составляют 25% всего контента на платформе.
+
 * Я хочу добавить относительную оценку жанра на платформе. Я вычислю среднюю оценку для каждого жанра на каждой платформе,
-а затем разделю ее на среднюю оценку по всем жанрам на этой платформе, чтобы посмотреть, какие жанры получают относительно высокие или низкие оценки на разных платформах.
+а затем разделю ее на среднюю оценку по всем жанрам на этой платформе, чтобы посмотреть, какие жанры получают 
+относительно высокие или низкие оценки на разных платформах.
+Что значат циферки тут? Если оценка Жанра Экшн на платформе ПК равно 6, значит в среднем на пк игры в этом жанре оценивают на 6
+При этом эта же игра, в этом же жанре но на платформе Айфон может быть оценена на 10. Я хочу использовать этот признак,
+чтобы определить, на какую лучше платформу выпускать игру того или иного жанра. 
 
-Пока первого признака нет в основном датасете, чтобы потом я могла влить все три новых сразу
 
-Я надеюсь эти признаки будут действительно полезными и помогут мне с моими гипотезами. Кстати о них
+Пока что я не уверена, как именно будет происходить машинное обучение,
+потому что после кр я поняла, что кажется я не совсем понимаю, как применять штуки из семинаров для реальных задач :(
+
+Я нашла новые признаки, надеюсь я не ошиблась, и они правда будут мне полезны, и помогут мне с гипотезами.
+Кстати о них...
 
 <u>**Шаг 6. Гипотезы**</u>
 

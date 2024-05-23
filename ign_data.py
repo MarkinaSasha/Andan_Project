@@ -4,7 +4,7 @@ import pandas as pd
 чтобы в дальнейшем все мои собранные данные не отличались по набору характеристик от исходника"""
 
 def find_u_gen():
-    with open("C:/Users/Саша/Python_Basic/Andan_project/ign.csv", "r", encoding="utf-8") as ign:
+    with open("ign.csv", "r", encoding="utf-8") as ign:
         df = pd.read_csv(ign)
         # pd.options.display.max_columns = len(df.columns)
         # полюбовались датасетом и хватит-

@@ -5,7 +5,7 @@ import numpy as np
 # наконец, надо совсместить спаршенные данные и исходные
 
 with open("total_data_set.csv", "w", encoding="utf-8") as total:
-    with open("C:/Users/Саша/Python_Basic/Andan_project/try_more_data.csv", "r", encoding="utf-8") as ign:
+    with open("try_more_data.csv", "r", encoding="utf-8") as ign:
         df1 = pd.read_csv(ign)
         df1 = df1.drop(np.where(df1['release_year'] == 2049)[0])
         # убираем все строки, где год выпуска 2049.
@@ -13,7 +13,7 @@ with open("total_data_set.csv", "w", encoding="utf-8") as total:
         df1 = df1.drop_duplicates(keep=False, inplace=False)
         df1.to_csv(total, encoding='utf-8', index=False)
 
-    with open("C:/Users/Саша/Python_Basic/Andan_project/ign.csv", "r", encoding="utf-8") as ign:
+    with open("ign.csv", "r", encoding="utf-8") as ign:
         df2 = pd.read_csv(ign)
         df2.drop(df2.columns[[0]], axis=1, inplace=True)
         df2.drop(['score_phrase', 'url', 'editors_choice', 'release_day'], axis=1, inplace=True)

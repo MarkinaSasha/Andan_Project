@@ -1,13 +1,10 @@
 import requests
-from bs4 import BeautifulSoup as BS
 from fake_useragent import UserAgent
-
 import time
 
 # С сайта https://selenium-python.readthedocs.io/getting-started.html#simple-usage
 # на всякий случай предварительно качаю всё
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from ign_data import find_u_gen
 from ign_data import find_u_pltf

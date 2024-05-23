@@ -15,7 +15,7 @@ warnings.filterwarnings("ignore")
 
 # в ручном режиме убираю лишнюю строку с заголовками второго датасета!!!
 
-df = pd.read_csv("C:/Users/Саша/Python_Basic/Andan_project/total_data_set.csv", error_bad_lines=False, engine ='python')
+df = pd.read_csv("total_data_set.csv", error_bad_lines=False, engine ='python')
 
 # Я не знаю, с чего начать, поэтому начнем строить графики и искать зависимости по порядку по всем модулям.
 
@@ -31,8 +31,8 @@ df = pd.read_csv("C:/Users/Саша/Python_Basic/Andan_project/total_data_set.cs
 # ************************************************************************************************************
 # Для Жанра и счёта
 
-# fig = sns.scatterplot(data=df, y="genre", x="score")
-# plt.show()
+fig = sns.scatterplot(data=df, y="genre", x="score")
+plt.show()
 # закономерностей не нашла, возможно мультижанровасть попортила всё. Исправлю
 
 # fig2 = sns.lineplot(data=df, y="genre", x="score")
@@ -49,9 +49,9 @@ df = pd.read_csv("C:/Users/Саша/Python_Basic/Andan_project/total_data_set.cs
 # У подавляющего большинства оценки стоят выше 6, больше всего восьмёрок
 
 # Меняю формат столбца, чтобы сделать ящик с усами, так как он требует хотя бы один столбец с numeric значениями
-ser = pd.Series(df['score'])
-ser = ser.replace('score', '')
-ser = pd.to_numeric(ser)
+# ser = pd.Series(df['score'])
+# ser = ser.replace('score', '')
+# ser = pd.to_numeric(ser)
 # fig5 = sns.boxplot(data=df, y=df['genre'], x=ser)
 # plt.show()
 # вот этот график для меня самый важный пока что. Он структурирует все токи и показывает,

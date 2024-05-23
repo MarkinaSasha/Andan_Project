@@ -161,4 +161,4 @@ df = pd.DataFrame({"title":name_data, "platform":platform_data,
                    "release_year":year_data, "release_month":month_data})
 df = df[df.isin(["---"]) == False]
 df = df.dropna()
-df.to_csv (r'C:\Users\Саша\Python_Basic\Andan_project\try_more_data.csv', index= False )
+df.to_csv (r'try_more_data.csv', index= False )
