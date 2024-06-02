@@ -1,3 +1,5 @@
+ ![alt tag](https://github.com/MarkinaSasha/Andan_Project/blob/main/oh_no_its_me.jpeg)
+ 
 ## Проект по Анализу данных 
 ## Тема "Анализ популярности игр на основе данных обзоров портала IGN"
 
