@@ -9,8 +9,8 @@
 1) Parsing (смотреть файлы по порядку):
    1. parsing_links.ipynb
    2. making_df.ipynb 
-   3. Финальный файл: total_data_set.csv
-  * Все остальные файлы в All_data_files нужны были в процессе парсинга, и боюсь их удалять, вдруг все слломается. 
+   3. Финальный файл: total_data_set.csv (лежит в All_data_files)
+  * Все остальные файлы в All_data_files нужны были в процессе парсинга.
 
 2) EDA:
    1. Step3_and_4.ipynb
