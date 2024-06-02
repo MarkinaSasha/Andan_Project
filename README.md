@@ -13,9 +13,9 @@
   * Все остальные файлы в All_data_files нужны были в процессе парсинга, и боюсь их удалять, вдруг все слломается. 
 
 2) EDA:
-  * Step3_and_4.ipynb
+   1. Step3_and_4.ipynb
 
 3) ML_and_Hypothesis (смотреть файлы по порядку):
-  * New_traits.ipynb
-  * Hypothesis.ipynb
-  * ML.ipynb
+   1. New_traits.ipynb
+   2. Hypothesis.ipynb
+   3. ML.ipynb
